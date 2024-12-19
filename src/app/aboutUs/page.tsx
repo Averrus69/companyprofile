@@ -20,12 +20,13 @@ export default function AboutUs() {
         vision to transform the heavy equipment industry. What began as a single
         location offering equipment rentals has since grown into a multi-faceted
         company with an expansive fleet, a range of services, and a solid
-        reputation built on trust and reliability. Throughout the years, we've
-        expanded our operations to meet the growing demands of industries that
-        rely on efficient and durable machinery. From our humble beginnings,
-        we've evolved into a leader in providing both sales and services for
-        heavy equipment, thanks to our focus on innovation, quality, and
-        customer satisfaction. Key milestones in our history include:
+        reputation built on trust and reliability. Throughout the years,
+        we&apos;ve expanded our operations to meet the growing demands of
+        industries that rely on efficient and durable machinery. From our humble
+        beginnings, we&apos;ve evolved into a leader in providing both sales and
+        services for heavy equipment, thanks to our focus on innovation,
+        quality, and customer satisfaction. Key milestones in our history
+        include:
       </p>
       <ul className="list-disc" style={{ listStylePosition: "inside" }}>
         <li>
