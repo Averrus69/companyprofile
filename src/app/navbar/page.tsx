@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 
 export function Navbar() {
@@ -22,3 +23,5 @@ export function Navbar() {
     </div>
   );
 }
+
+export default Navbar;
