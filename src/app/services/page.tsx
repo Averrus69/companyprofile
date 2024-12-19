@@ -1,79 +1,253 @@
-// Our Products & Services
-// At Tracos, we are committed to providing top-tier heavy equipment and services that meet the unique needs of businesses across construction, mining, agriculture, and industrial sectors. From machinery sales to rental services and comprehensive maintenance support, we offer a wide range of solutions designed to optimize your operations.
+import React from "react";
 
-// Our Products
-// We provide a diverse selection of high-quality machinery from leading global brands. Whether you need a new machine for a large-scale construction project or a reliable used machine for your farm, Tracos has the right equipment for the job.
+const ServicesPage = () => {
+  return (
+    <div className="container mx-auto px-6 py-12">
+      {/* Header Section */}
+      <header className="text-center mb-12">
+        <h1 className="text-4xl font-extrabold text-gray-900">
+          Our Products & Services
+        </h1>
+        <p className="mt-4 text-xl text-gray-600">
+          At Tracos, we are committed to providing top-tier heavy equipment and
+          services that meet the unique needs of businesses across construction,
+          mining, agriculture, and industrial sectors. From machinery sales to
+          rental services and comprehensive maintenance support, we offer a wide
+          range of solutions designed to optimize your operations.
+        </p>
+      </header>
 
-// Excavators
-// Excavators are essential for digging, lifting, and trenching. Tracos offers a wide range of excavators, from compact mini-excavators to large tracked machines ideal for heavy-duty earth-moving tasks.
+      {/* Our Products Section */}
+      <section>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Products</h2>
+        <p className="mb-6">
+          We provide a diverse selection of high-quality machinery from leading
+          global brands. Whether you need a new machine for a large-scale
+          construction project or a reliable used machine for your farm, Tracos
+          has the right equipment for the job.
+        </p>
 
-// Model Example: Caterpillar 320D
-// Price: Starting at $120,000 (new) / $75,000 (used)
-// Bulldozers
-// Perfect for grading, pushing soil, and other earth-moving tasks, our bulldozers are built to handle the toughest conditions, from construction sites to mining operations.
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Excavators */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold text-gray-800">Excavators</h3>
+            <p className="text-gray-600 mt-2">
+              Excavators are essential for digging, lifting, and trenching.
+              Tracos offers a wide range of excavators, from compact
+              mini-excavators to large tracked machines ideal for heavy-duty
+              earth-moving tasks.
+            </p>
+            <div className="mt-4">
+              <p>
+                <strong>Model Example:</strong> Caterpillar 320D
+              </p>
+              <p>
+                <strong>Price:</strong> Starting at $120,000 (new) / $75,000
+                (used)
+              </p>
+            </div>
+          </div>
 
-// Model Example: Komatsu D61PX-24
-// Price: Starting at $150,000 (new) / $95,000 (used)
-// Cranes
-// For lifting and moving heavy loads, our range of cranes is designed to offer precision and power. We stock both mobile and tower cranes to meet the needs of diverse industries.
+          {/* Bulldozers */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold text-gray-800">Bulldozers</h3>
+            <p className="text-gray-600 mt-2">
+              Perfect for grading, pushing soil, and other earth-moving tasks,
+              our bulldozers are built to handle the toughest conditions, from
+              construction sites to mining operations.
+            </p>
+            <div className="mt-4">
+              <p>
+                <strong>Model Example:</strong> Komatsu D61PX-24
+              </p>
+              <p>
+                <strong>Price:</strong> Starting at $150,000 (new) / $95,000
+                (used)
+              </p>
+            </div>
+          </div>
 
-// Model Example: Liebherr LTM 1070-4.2
-// Price: Starting at $600,000 (new) / $400,000 (used)
-// Loaders
-// Ideal for material handling, digging, and transporting, Tracos offers a variety of wheel loaders and track loaders. These machines are designed for both light and heavy-duty tasks.
+          {/* Cranes */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold text-gray-800">Cranes</h3>
+            <p className="text-gray-600 mt-2">
+              For lifting and moving heavy loads, our range of cranes is
+              designed to offer precision and power. We stock both mobile and
+              tower cranes to meet the needs of diverse industries.
+            </p>
+            <div className="mt-4">
+              <p>
+                <strong>Model Example:</strong> Liebherr LTM 1070-4.2
+              </p>
+              <p>
+                <strong>Price:</strong> Starting at $600,000 (new) / $400,000
+                (used)
+              </p>
+            </div>
+          </div>
 
-// Model Example: CAT 950M
-// Price: Starting at $130,000 (new) / $80,000 (used)
-// Dump Trucks
-// Heavy-duty dump trucks from Tracos can carry massive loads of dirt, gravel, and other materials across rough terrain, making them perfect for large construction or mining operations.
+          {/* Loaders */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold text-gray-800">Loaders</h3>
+            <p className="text-gray-600 mt-2">
+              Ideal for material handling, digging, and transporting, Tracos
+              offers a variety of wheel loaders and track loaders. These
+              machines are designed for both light and heavy-duty tasks.
+            </p>
+            <div className="mt-4">
+              <p>
+                <strong>Model Example:</strong> CAT 950M
+              </p>
+              <p>
+                <strong>Price:</strong> Starting at $130,000 (new) / $80,000
+                (used)
+              </p>
+            </div>
+          </div>
 
-// Model Example: Volvo A40G
-// Price: Starting at $230,000 (new) / $150,000 (used)
-// Tractors & Agricultural Equipment
-// From large agricultural tractors to tillers and harvesters, Tracos offers durable machines that make farming more efficient and productive.
+          {/* Dump Trucks */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold text-gray-800">
+              Dump Trucks
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Heavy-duty dump trucks from Tracos can carry massive loads of
+              dirt, gravel, and other materials across rough terrain, making
+              them perfect for large construction or mining operations.
+            </p>
+            <div className="mt-4">
+              <p>
+                <strong>Model Example:</strong> Volvo A40G
+              </p>
+              <p>
+                <strong>Price:</strong> Starting at $230,000 (new) / $150,000
+                (used)
+              </p>
+            </div>
+          </div>
 
-// Model Example: John Deere 8R Series Tractor
-// Price: Starting at $250,000 (new) / $180,000 (used)
-// Our Services
-// In addition to providing top-quality equipment, Tracos offers a range of services to ensure that your machinery stays in optimal condition and that your business operates smoothly.
+          {/* Tractors & Agricultural Equipment */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold text-gray-800">
+              Tractors & Agricultural Equipment
+            </h3>
+            <p className="text-gray-600 mt-2">
+              From large agricultural tractors to tillers and harvesters, Tracos
+              offers durable machines that make farming more efficient and
+              productive.
+            </p>
+            <div className="mt-4">
+              <p>
+                <strong>Model Example:</strong> John Deere 8R Series Tractor
+              </p>
+              <p>
+                <strong>Price:</strong> Starting at $250,000 (new) / $180,000
+                (used)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-// Equipment Rentals
-// If purchasing heavy machinery is not an option, Tracos offers flexible equipment rental plans. Whether you need machines for a day, month, or longer, our fleet of well-maintained equipment is available for short-term or long-term rental.
+      {/* Our Services Section */}
+      <section className="mt-16">
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Services</h2>
+        <p className="mb-6">
+          In addition to providing top-quality equipment, Tracos offers a range
+          of services to ensure that your machinery stays in optimal condition
+          and that your business operates smoothly.
+        </p>
 
-// Rental Pricing: Rates start at $500 per day for mini-excavators and $2,500 per day for large cranes.
-// Delivery & Pickup: Available at an additional cost, depending on your location.
-// Maintenance & Repairs
-// Our expert technicians provide comprehensive maintenance and repair services to keep your machinery running smoothly. We offer both scheduled servicing and emergency repairs, ensuring that your equipment stays operational and efficient.
+        {/* Services List */}
+        <div className="space-y-8">
+          {/* Equipment Rentals */}
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold text-gray-800">
+              Equipment Rentals
+            </h3>
+            <p className="text-gray-600 mt-2">
+              If purchasing heavy machinery is not an option, Tracos offers
+              flexible equipment rental plans. Whether you need machines for a
+              day, month, or longer, our fleet of well-maintained equipment is
+              available for short-term or long-term rental.
+            </p>
+            <div className="mt-4">
+              <p>
+                <strong>Rental Pricing:</strong> Rates start at $500 per day for
+                mini-excavators and $2,500 per day for large cranes.
+              </p>
+              <p>
+                <strong>Delivery & Pickup:</strong> Available at an additional
+                cost, depending on your location.
+              </p>
+            </div>
+          </div>
 
-// Maintenance Services: Starting at $150 per hour.
-// Repair Services: Quotes provided after an initial assessment.
-// Spare Parts & Accessories
-// We supply a wide range of spare parts and accessories for all makes and models of heavy equipment. From filters and hydraulic hoses to tracks and buckets, we can help you find the parts you need quickly and efficiently.
+          {/* Maintenance & Repairs */}
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold text-gray-800">
+              Maintenance & Repairs
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Our expert technicians provide comprehensive maintenance and
+              repair services to keep your machinery running smoothly. We offer
+              both scheduled servicing and emergency repairs, ensuring that your
+              equipment stays operational and efficient.
+            </p>
+            <div className="mt-4">
+              <p>
+                <strong>Maintenance Services:</strong> Starting at $150 per
+                hour.
+              </p>
+              <p>
+                <strong>Repair Services:</strong> Quotes provided after an
+                initial assessment.
+              </p>
+            </div>
+          </div>
 
-// Spare Parts Pricing: Contact us for a detailed quote based on the part or accessory needed.
-// Consultation & Equipment Sourcing
-// Not sure what equipment is best for your project? Our experienced team is available to consult with you and recommend the most suitable machines based on your specific needs. We can also source hard-to-find equipment or parts to ensure you get exactly what you need.
+          {/* Spare Parts & Accessories */}
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold text-gray-800">
+              Spare Parts & Accessories
+            </h3>
+            <p className="text-gray-600 mt-2">
+              We supply a wide range of spare parts and accessories for all
+              makes and models of heavy equipment. From filters and hydraulic
+              hoses to tracks and buckets, we can help you find the parts you
+              need quickly and efficiently.
+            </p>
+            <div className="mt-4">
+              <p>
+                <strong>Spare Parts Pricing:</strong> Contact us for a detailed
+                quote based on the part or accessory needed.
+              </p>
+            </div>
+          </div>
 
-// Consultation Fees: Free for clients purchasing or renting equipment.
-// Why Choose Tracos?
-// High-Quality Equipment: We offer only the best brands and well-maintained machines, ensuring that you have reliable equipment for your projects.
-// Customer-Focused Service: We understand the challenges of your industry, and we provide tailored solutions that make your operations more efficient.
-// Expert Support: Our team of experienced professionals is always ready to provide expert advice, maintenance, and repair services.
-// Customer Testimonials
-// Don’t just take our word for it—see what some of our satisfied clients have to say about working with Tracos.
+          {/* Consultation & Equipment Sourcing */}
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold text-gray-800">
+              Consultation & Equipment Sourcing
+            </h3>
+            <p className="text-gray-600 mt-2">
+              Not sure what equipment is best for your project? Our experienced
+              team is available to consult with you and recommend the most
+              suitable machines based on your specific needs. We can also source
+              hard-to-find equipment or parts to ensure you get exactly what you
+              need.
+            </p>
+            <div className="mt-4">
+              <p>
+                <strong>Consultation Fees:</strong> Free for clients purchasing
+                or renting equipment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
 
-// John Carter, Project Manager at Apex Construction
-// "We’ve been using Tracos for all of our heavy equipment needs for the past 5 years. From excavators to bulldozers, their fleet is top-notch. They also have a fantastic maintenance team that keeps our machines in perfect working order. Highly recommend!"
-
-// Samantha Lee, Operations Director at Green Fields Agriculture
-// "As a growing farm, we needed reliable tractors and harvesters for our seasonal operations. Tracos provided us with exactly what we needed and helped us find the right equipment at a price that fit our budget. Their customer service is outstanding!"
-
-// Liam Turner, Site Manager at Riverstone Mining
-// "We’ve rented cranes and dump trucks from Tracos for several large projects. They’ve always been prompt with delivery and pickup, and the machines are well-maintained and perform flawlessly. They’ve become an integral part of our operations."
-
-// Get in Touch
-// Looking for reliable heavy equipment or services? Tracos is here to help. Whether you want to rent equipment, buy new machinery, or schedule maintenance, we have the right solution for you.
-
-// Contact us today to get a quote or speak with one of our experts about your next project.
-
-// This Products & Services page provides a detailed overview of the various solutions Tracos offers, making it easier for potential customers to learn about your offerings and understand the value you provide. Including pricing details and customer testimonials further builds trust and transparency.
+export default ServicesPage;

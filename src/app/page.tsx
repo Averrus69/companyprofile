@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
           industrial projects. It could operate both in the local and
           international markets, depending on its scale.
         </p>
+
         <button className="border bg-yellow-500 border-black px-4 py-1 mt-4">
-          LEARN MORE ABOUT TRACOS
+          <Link href="/aboutUs">LEARN MORE ABOUT TRACOS</Link>
         </button>
       </div>
     </div>
